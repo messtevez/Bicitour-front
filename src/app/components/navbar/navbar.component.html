@@ -1,0 +1,20 @@
+<div class="navbar" [ngStyle]="{'background-color': background}">
+    <div class="logo"><a routerLink="/"><img src="../../../assets/img/imgtipo.png" alt=""></a></div>
+    <div class="links">
+        <ul>
+            <li><a class="nav_link" routerLink="/eventos" routerLinkActive="active">Eventos</a></li>
+            <li><a class="nav_link" routerLink="/seParteDeBicitourX" routerLinkActive="active">Se parte de Bicitour X</a></li>
+            <li><a class="nav_link" routerLink="/quienesSomos" routerLinkActive="active">Quienes somos </a></li>
+        </ul>
+    </div>
+    <div class="login" (mouseleave)="openModal()">
+        <a routerLink="/ingreso" *ngIf="!isLoggedIn"><i class="ri-account-circle-line" ></i></a>
+        <a routerLink="/perfil" (mouseenter)="openModal()" *ngIf="isLoggedIn"><i class="ri-home-gear-line"></i><p>{{nombre}}</p></a>
+        @if (isModalOpen) {
+            <div class="dot-menu" *ngIf="isLoggedIn">
+                <span (click)="update()" class="option">Actualizar perfil</span>
+                <span class="option" (click)="logout()">Cerrar sesion</span>
+            </div>  
+        }
+    </div>
+</div>

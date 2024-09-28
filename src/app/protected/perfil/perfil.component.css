@@ -1,0 +1,27 @@
+.dashboard{
+    background-color: #EBA935;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backgroundImg {
+    opacity: 0.9;
+    width: 80%;
+    position: fixed;
+    left: 616px;
+    top: -60px;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dashboard h3{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    font-family: var(--titulos);
+    font-weight: 400;
+}

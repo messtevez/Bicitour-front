@@ -1,0 +1,41 @@
+<app-navbar background="#EBA935"></app-navbar>
+<section class="registro">
+    <img class="backgroundImg" alt="" src="../../../assets/img/LogoTexto.png">
+    <h3>Crea tu cuenta con Bicitour X</h3>
+    <div class="registroForm">
+        <form (ngSubmit)="onSubmit($event)">
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input [(ngModel)]="nombre" type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="edad">Edad:</label>
+                <input [(ngModel)]="edad" type="number" id="edad" name="edad" required min="18" max="100"><br><br>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input [(ngModel)]="email" type="email" id="correo" name="correo" required><br><br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input [(ngModel)]="pw" type="password" id="pw" name="pw" required><br><br>
+
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input [(ngModel)]="nacionalidad" type="text" name="nacionalidad" required> <br><br>
+
+                <label for="tipo_documento">Tipo de Documento:</label>
+                <select [(ngModel)]="tipoDeDocumento" id="tipo_documento" name="tipo_documento" required>
+                    <option value=""></option>
+                    <option value="pasaporte">Pasaporte de extranjeria</option>
+                    <option value="CC">Cédula de ciudadania</option>
+                </select><br><br>
+
+                <label for="numero_documento">Número de Documento:</label>
+                <input [(ngModel)]="documentoDeIdentidad" type="text" id="numero_documento" name="numero_documento" required><br><br>
+                
+                <label for="numero_contacto">Número de contacto:</label>
+                <input [(ngModel)]="numeroDeContacto" type="text" id="numero_contacto" name="numero_contacto" required><br><br></div>
+
+            <div class="botonRegistro">
+                <button class="button-53" type="submit">Registrate</button>
+            </div>
+        </form>
+    </div>
+</section>

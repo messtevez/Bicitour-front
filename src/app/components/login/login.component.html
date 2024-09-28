@@ -1,0 +1,23 @@
+<app-navbar background="#621D74"></app-navbar>
+<div class="ingreso">
+    <img class="backgroundImg" alt="" src="../../../assets/img/LogoTexto.png">
+    <div class="login">
+        <form (ngSubmit)="login()"  class="login">
+            <h3 class="tituloIngreso">Bienvenidx de nuevo</h3>
+            <div class="formularioLogin">
+                <div class="loginInput">
+                    <label for="">Correo electronico:</label>
+                    <input [(ngModel)]="email" type="email" id="email" name="email" required>
+                </div>
+                <div class="pw">
+                    <label for="pw"><b>Contraseña:</b></label>
+                    <input [(ngModel)]="pw" type="password" name="pw" required>
+                </div>
+                <button class="button-53" type="submit">Iniciar sesión</button>
+            </div>
+        </form>
+    </div>
+    <div class="registro">
+        <button routerLink="/registro" class="button-53">Registrate</button>
+    </div>
+</div>

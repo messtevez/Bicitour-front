@@ -1,0 +1,39 @@
+.eventos{
+    background-color: #EBA935;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos h3{
+    color: white;
+    font-size: 40px;
+    font-family: var(--titulos);
+    font-weight: 400;
+}
+
+.backgroundImg {
+    opacity: 0.8;
+    width: 80%;
+    position: fixed;
+    left: 616px;
+    top: -60px;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+.cajaEventos{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+
+.eventoImg img{
+    height: 250px;
+    width: 200px;
+}
